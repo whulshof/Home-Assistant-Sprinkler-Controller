@@ -1,16 +1,5 @@
-switch:
-  - platform: rpi_gpio
-    invert_logic: true
-    # Refer to Raspberry Pi pinout to set port numbers
-    ports:
-      14: Sprinkler Zone 1
-      15: Sprinkler Zone 2
-      18: Sprinkler Zone 3
-      23: Sprinkler Zone 4
-      24: Sprinkler Zone 5
-      25: Sprinkler Zone 6
-      8: Sprinkler Zone 7
-      7: Sprinkler Zone 8
+# replaced switch in Raspberry with switch in esp8266 relay device, which makes controlling the valves easier outside the house
+# the device has to be named "sprinkler_", to fit in with naming below.
 
 # Define timers that control sprinkler switches
 timer:
